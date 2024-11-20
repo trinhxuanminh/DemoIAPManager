@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		963524502CEB350400F7634A /* IAPManager in Frameworks */ = {isa = PBXBuildFile; productRef = 9635244F2CEB350400F7634A /* IAPManager */; };
 		96BA88352CE463AE00A33F96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA88342CE463AE00A33F96 /* AppDelegate.swift */; };
 		96BA88372CE463AE00A33F96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA88362CE463AE00A33F96 /* SceneDelegate.swift */; };
 		96BA88392CE463AE00A33F96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA88382CE463AE00A33F96 /* ViewController.swift */; };
 		96BA883C2CE463AE00A33F96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96BA883A2CE463AE00A33F96 /* Main.storyboard */; };
 		96BA883E2CE463B000A33F96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96BA883D2CE463B000A33F96 /* Assets.xcassets */; };
 		96BA88412CE463B000A33F96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96BA883F2CE463B000A33F96 /* LaunchScreen.storyboard */; };
+		96BA884F2CE5D90800A33F96 /* AppProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA884E2CE5D90800A33F96 /* AppProduct.swift */; };
+		96BA88522CE5D94400A33F96 /* AppPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA88512CE5D94400A33F96 /* AppPermission.swift */; };
+		96BA88562CE605C800A33F96 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA88552CE605C800A33F96 /* PermissionManager.swift */; };
+		96BA88582CE6F2F000A33F96 /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA88572CE6F2F000A33F96 /* ProductManager.swift */; };
+		96C06F932CED8F87003423C5 /* IAPManager in Frameworks */ = {isa = PBXBuildFile; productRef = 96C06F922CED8F87003423C5 /* IAPManager */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,10 @@
 		96BA883D2CE463B000A33F96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96BA88402CE463B000A33F96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96BA88422CE463B000A33F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96BA884E2CE5D90800A33F96 /* AppProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProduct.swift; sourceTree = "<group>"; };
+		96BA88512CE5D94400A33F96 /* AppPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPermission.swift; sourceTree = "<group>"; };
+		96BA88552CE605C800A33F96 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		96BA88572CE6F2F000A33F96 /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				963524502CEB350400F7634A /* IAPManager in Frameworks */,
+				96C06F932CED8F87003423C5 /* IAPManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +70,15 @@
 			children = (
 				96BA88342CE463AE00A33F96 /* AppDelegate.swift */,
 				96BA88362CE463AE00A33F96 /* SceneDelegate.swift */,
-				96BA88382CE463AE00A33F96 /* ViewController.swift */,
 				96BA883A2CE463AE00A33F96 /* Main.storyboard */,
-				96BA883D2CE463B000A33F96 /* Assets.xcassets */,
 				96BA883F2CE463B000A33F96 /* LaunchScreen.storyboard */,
+				96BA88382CE463AE00A33F96 /* ViewController.swift */,
+				96BA883D2CE463B000A33F96 /* Assets.xcassets */,
 				96BA88422CE463B000A33F96 /* Info.plist */,
+				96BA884E2CE5D90800A33F96 /* AppProduct.swift */,
+				96BA88512CE5D94400A33F96 /* AppPermission.swift */,
+				96BA88572CE6F2F000A33F96 /* ProductManager.swift */,
+				96BA88552CE605C800A33F96 /* PermissionManager.swift */,
 			);
 			path = DemoIAP;
 			sourceTree = "<group>";
@@ -83,6 +99,10 @@
 			dependencies = (
 			);
 			name = DemoIAP;
+			packageProductDependencies = (
+				9635244F2CEB350400F7634A /* IAPManager */,
+				96C06F922CED8F87003423C5 /* IAPManager */,
+			);
 			productName = DemoIAP;
 			productReference = 96BA88312CE463AE00A33F96 /* DemoIAP.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 96BA88282CE463AE00A33F96;
+			packageReferences = (
+				96C06F912CED8F86003423C5 /* XCRemoteSwiftPackageReference "IAPManager" */,
+			);
 			productRefGroup = 96BA88322CE463AE00A33F96 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BA88522CE5D94400A33F96 /* AppPermission.swift in Sources */,
+				96BA88582CE6F2F000A33F96 /* ProductManager.swift in Sources */,
 				96BA88392CE463AE00A33F96 /* ViewController.swift in Sources */,
 				96BA88352CE463AE00A33F96 /* AppDelegate.swift in Sources */,
+				96BA88562CE605C800A33F96 /* PermissionManager.swift in Sources */,
+				96BA884F2CE5D90800A33F96 /* AppProduct.swift in Sources */,
 				96BA88372CE463AE00A33F96 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,7 +245,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -292,19 +319,20 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T852J6UR43;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoIAP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = proxglobal.DemoIAP;
+				PRODUCT_BUNDLE_IDENTIFIER = cat.language.keyboard.diy.combine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -319,19 +347,20 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T852J6UR43;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DemoIAP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = proxglobal.DemoIAP;
+				PRODUCT_BUNDLE_IDENTIFIER = cat.language.keyboard.diy.combine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -361,6 +390,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96C06F912CED8F86003423C5 /* XCRemoteSwiftPackageReference "IAPManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/trinhxuanminh/IAPManager";
+			requirement = {
+				branch = develop/1.3.0;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9635244F2CEB350400F7634A /* IAPManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IAPManager;
+		};
+		96C06F922CED8F87003423C5 /* IAPManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96C06F912CED8F86003423C5 /* XCRemoteSwiftPackageReference "IAPManager" */;
+			productName = IAPManager;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96BA88292CE463AE00A33F96 /* Project object */;
 }

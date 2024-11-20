@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,129 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoIAP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 credit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHk-oU-kYX">
+                                <rect key="frame" x="167.33333333333334" y="89" width="58.333333333333343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="bcP-aQ-sh2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Normal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m29-fN-heT">
+                                <rect key="frame" x="169" y="191" width="55.333333333333343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Uxe-dX-g1d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Skin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfe-jL-jtF">
+                                <rect key="frame" x="167.33333333333334" y="140" width="58.666666666666657" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="7Fz-wg-X5q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJX-qF-zvt">
+                                <rect key="frame" x="124" y="262" width="145" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="i6O-Bp-FmU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Purchase 5 skip"/>
+                                <connections>
+                                    <action selector="purchase5Skip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rJL-AM-rLo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqq-td-te7">
+                                <rect key="frame" x="131.66666666666666" y="331" width="129.99999999999997" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="eua-m0-r2d"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Purchase skin"/>
+                                <connections>
+                                    <action selector="purchaseSkin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IR9-LL-C7l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8F-4C-Ii4">
+                                <rect key="frame" x="120.66666666666669" y="400" width="152" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="hPP-RH-wyy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Purchase weekly"/>
+                                <connections>
+                                    <action selector="purchaseWeekly:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wGo-EF-5Fg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDv-SN-adV">
+                                <rect key="frame" x="116" y="469" width="161" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="qRW-ia-qLH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Purchase monthly"/>
+                                <connections>
+                                    <action selector="purchaseMonthly:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Olj-QN-7rc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXx-CD-TzH">
+                                <rect key="frame" x="124" y="538" width="145" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="iq7-bv-VWR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Purchase yearly"/>
+                                <connections>
+                                    <action selector="purchaseYearly:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O0I-lo-aCj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YDv-SN-adV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="04x-MO-KFz"/>
+                            <constraint firstItem="XHk-oU-kYX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6yL-tn-AXM"/>
+                            <constraint firstItem="hXx-CD-TzH" firstAttribute="top" secondItem="YDv-SN-adV" secondAttribute="bottom" constant="30" id="7n3-QP-8LV"/>
+                            <constraint firstItem="ZJX-qF-zvt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9eq-6g-l7d"/>
+                            <constraint firstItem="XHk-oU-kYX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="IhB-Ka-k2f"/>
+                            <constraint firstItem="m29-fN-heT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K0M-Rh-n48"/>
+                            <constraint firstItem="YDv-SN-adV" firstAttribute="top" secondItem="r8F-4C-Ii4" secondAttribute="bottom" constant="30" id="Ncd-wx-pUv"/>
+                            <constraint firstItem="Gqq-td-te7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RFg-MG-Y8q"/>
+                            <constraint firstItem="m29-fN-heT" firstAttribute="top" secondItem="Pfe-jL-jtF" secondAttribute="bottom" constant="30" id="SI5-vg-DQt"/>
+                            <constraint firstItem="hXx-CD-TzH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UWf-lm-MOl"/>
+                            <constraint firstItem="Pfe-jL-jtF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aGi-P2-3VW"/>
+                            <constraint firstItem="Pfe-jL-jtF" firstAttribute="top" secondItem="XHk-oU-kYX" secondAttribute="bottom" constant="30" id="cAt-pR-0x6"/>
+                            <constraint firstItem="Gqq-td-te7" firstAttribute="top" secondItem="ZJX-qF-zvt" secondAttribute="bottom" constant="30" id="k6q-5b-ctg"/>
+                            <constraint firstItem="ZJX-qF-zvt" firstAttribute="top" secondItem="m29-fN-heT" secondAttribute="bottom" constant="50" id="kOX-9Y-NUG"/>
+                            <constraint firstItem="r8F-4C-Ii4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x8r-Fd-d8O"/>
+                            <constraint firstItem="r8F-4C-Ii4" firstAttribute="top" secondItem="Gqq-td-te7" secondAttribute="bottom" constant="30" id="yHS-hK-rTa"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="creditLabel" destination="XHk-oU-kYX" id="IRE-FH-nfd"/>
+                        <outlet property="monthlyButton" destination="YDv-SN-adV" id="Tmr-9x-4lZ"/>
+                        <outlet property="premiumLabel" destination="m29-fN-heT" id="Ooo-aH-FNd"/>
+                        <outlet property="skinButton" destination="Gqq-td-te7" id="U9d-uR-RVt"/>
+                        <outlet property="skinLabel" destination="Pfe-jL-jtF" id="mEa-EG-SL1"/>
+                        <outlet property="skip5Button" destination="ZJX-qF-zvt" id="0yv-I2-BTR"/>
+                        <outlet property="weeklyButton" destination="r8F-4C-Ii4" id="G4C-zo-xJ4"/>
+                        <outlet property="yearlyButton" destination="hXx-CD-TzH" id="dYJ-D2-Ttm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="-2"/>
         </scene>
     </scenes>
 </document>
